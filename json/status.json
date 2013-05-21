@@ -3,7 +3,8 @@
         "handle": "Carlos",
         "email": "carlos@email.com",
 		"description": "My json project",
-		"files": ["ember.js","handlebars.js","data.json"]
+		"files": ["ember.js","handlebars.js","data.json"],
+		"foo": "applesauce"
     },
     {
         "handle": "Zachary",

@@ -31,8 +31,6 @@ Status = {
     },
     higlight: function(val) {
         val = val.toLowerCase();
-		var found = null;
-		
         if (val && val.length >= 2) {
             var Results = function(found) {
                     if (!found) {
@@ -46,16 +44,16 @@ Status = {
                     }
                 }
             App.listController.filter(function(item, index, self) {
-				for (var x in item) {
-					if (item.hasOwnProperty(x)) {
-						temp = ~item[x].toString().toLowerCase().indexOf(val);
-						if(temp !== 0){
-						  found = item.handle;
-						  console.log(temp);
-						  Results(found);
-						}
-					}
-				}
+                for (var x in item) {
+                    if (item.hasOwnProperty(x)) {
+                        temp = ~item[x].toString().toLowerCase().indexOf(val);
+                        if (temp !== 0) {
+                            found = item.handle;
+                            console.log(temp);
+                            Results(found);
+                        }
+                    }
+                }
             })
         } else {
             $('.users').show();
