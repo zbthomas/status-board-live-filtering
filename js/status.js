@@ -31,6 +31,8 @@ Status = {
     },
     higlight: function(val) {
         val = val.toLowerCase();
+		var found = null;
+		
         if (val && val.length >= 2) {
             var Results = function(found) {
                     if (!found) {
@@ -44,16 +46,16 @@ Status = {
                     }
                 }
             App.listController.filter(function(item, index, self) {
-                var _handle = item.handle.toLowerCase().indexOf(val);
-                var _files = item.files.toString().toLowerCase().indexOf(val);
-                var _description = item.description.toLowerCase().indexOf(val);
-				
-                if (_handle !== -1 || _files !== -1 || _description !== -1) {
-                    found = item.handle;
-                    Results(found);
-                } else {
-                    Results(null);
-                }
+				for (var x in item) {
+					if (item.hasOwnProperty(x)) {
+						temp = ~item[x].toString().toLowerCase().indexOf(val);
+						if(temp !== 0){
+						  found = item.handle;
+						  console.log(temp);
+						  Results(found);
+						}
+					}
+				}
             })
         } else {
             $('.users').show();
