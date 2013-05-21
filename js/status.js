@@ -49,7 +49,7 @@ Status = {
                         temp = ~item[x].toString().toLowerCase().indexOf(val);
                         if (temp !== 0) {
                             found = item.handle;
-                            console.log(temp);
+                            //console.log(temp);
                             Results(found);
                         }
                     }
