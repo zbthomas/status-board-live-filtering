@@ -1,0 +1,84 @@
+@charset UTF-8;
+
+body {
+font:12px Arial, Helvetica, sans-serif;
+color:#333;
+margin:0;
+padding:0;
+background:#fafafa;
+}
+
+main{
+  padding:2%;
+  float:left;
+  width:96%;	
+}
+
+main div{ 
+  float:left;   
+  width:100%;
+  text-align:left;
+
+}
+
+h1, h2, h3{
+ font-weight:normal;
+ color:#555;
+ padding:0;
+ margin:0;
+ line-height:normal;	
+}
+
+a{
+  color:#6699CC;
+}
+
+input[type="text"]{
+  padding:12px;
+  border:1px solid #ccc;
+  width:56%;	
+  text-align:center;
+  font-size:14px;
+  background:transparent url(../images/icon-sprite.png) 99% 58.25%  no-repeat;
+
+}
+.search{
+	  text-align:center;
+
+}
+.display{
+  background:#fff;
+  border:1px solid #ececec;
+  margin:1% 0 0 0;
+  width:100%;
+}
+
+highlight{ background:#FF0;}
+
+.users{ 
+  border-bottom:1px dotted #ccc;
+  padding:1%;
+  width:98%;
+}
+
+.users:last-child{ 
+border:none; 
+}
+
+.email{
+  background:transparent url(../images/icon-sprite.png) -4px 25.4% no-repeat;	
+  float:left;
+  width:32px;
+  height:24px;
+  padding-right:4px;
+  margin-right:6px;
+}
+
+p.description{
+  font-size:14px;	
+}
+
+p.files{
+	color:#777;
+	padding:0;
+}

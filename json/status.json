@@ -1,0 +1,20 @@
+[
+    {
+        "handle": "Carlos",
+        "email": "carlos@email.com",
+		"description": "My json project",
+		"files": ["ember.js","handlebars.js","data.json"]
+    },
+    {
+        "handle": "Zachary",
+        "email": "zachary@email.com",
+		"description": "Live Search tweaks",
+		"files": ["ember.js","main.js","live-search.js"]
+    },
+    {
+        "handle": "Terence",
+        "email": "terence@email.com",
+		"description": "Defect remediation",
+		"files": ["defect.js","fixit.js"]
+    }
+]
